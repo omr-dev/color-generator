@@ -1,9 +1,9 @@
 import Values from 'values.js';
-const componentToHex= (component)=>{
+const componentToHex= (component:number)=>{
     let hex=component.toString(16);
     return hex.length===1?0+hex:hex;
 }
-const rgbToHex=(r,g,b)=> '#'+componentToHex(r)+componentToHex(g)+componentToHex(b);
+const rgbToHex=(r:number,g:number,b:number)=> '#'+componentToHex(r)+componentToHex(g)+componentToHex(b);
 
 export default rgbToHex;
 
@@ -14,7 +14,7 @@ export default rgbToHex;
  * @argument color <required> [String]
  * @return true|false [Boolean]
  */
-export const isValidColorModel = (color) => {
+export const isValidColorModel = (color:string) => {
     try {
         new Values(color);
         return true;

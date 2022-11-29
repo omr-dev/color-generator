@@ -1,7 +1,10 @@
 import styles from './colorBox.module.css';
 import {useState} from 'react';
-
-const ColorBox = ({color, index}) => {
+type PropsColorBox={
+    color:string;
+    index:number;
+}
+const ColorBox = ({color, index}:PropsColorBox) => {
     const [isCopied, setIsCopied] = useState(false);
     const handleCopy = () => {
         setIsCopied(true);

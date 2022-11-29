@@ -1,11 +1,13 @@
 import styles from './header.module.css';
-import {useState} from 'react';
+import {FormEvent, useState} from 'react';
 import {isValidColorModel} from '../../utils';
-
-const Header = ({setCurrColor}) => {
+type PropsHeader={
+    setCurrColor:(color:string)=>void;
+}
+const Header = ({setCurrColor}:PropsHeader) => {
     const [inputColor, setInputColor] = useState("");
     const [isValidColor, setIsValidColor]=useState(true);
-    const handleSubmit = (e) => {
+    const handleSubmit = (e:FormEvent) => {
         e.preventDefault();
         if(isValidColorModel(inputColor)){
             setCurrColor(inputColor);
