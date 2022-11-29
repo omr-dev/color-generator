@@ -1,13 +1,15 @@
-
-import './App.css'
+import './App.css';
+import Body from './components/body/Body';
+import Header from './components/header/Header';
 
 function App() {
 
-  return (
-    <div className="App">
-      <h1>Color Generator</h1>
-    </div>
-  )
+    return (
+        <div className="App">
+            <Header/>
+            <Body/>
+        </div>
+    );
 }
 
-export default App
+export default App;
