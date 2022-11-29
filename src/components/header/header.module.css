@@ -1,0 +1,53 @@
+.container{
+    padding: 3.2rem;
+    display: flex;
+    align-items: center;
+gap:3.2rem ;
+    height: 100px;
+}
+.mainTitle{
+    padding: 0;
+    margin: 0;
+    font-size: 1.6rem;
+    line-height: 1.25;
+}
+
+.inputColor{
+    font-size: 1.36rem;
+    padding: .5rem 1rem;
+    border-color: transparent;
+    border-top-left-radius: .4rem;
+    border-bottom-left-radius: .4rem;
+    line-height: 1.5;
+}
+.btnSubmit{
+    font-size: 1.36rem;
+    line-height: 1.5;
+    background: #49a6e9;
+    border-color: transparent;
+    border-top-right-radius: .4rem;
+    border-bottom-right-radius: .4rem;
+    color: #fff;
+    cursor: pointer;
+    padding: .5rem 1rem;
+
+}
+@media (min-width: 800px) {
+    .mainTitle{
+        font-size: 2.8rem;
+        letter-spacing: .16rem;
+    }
+    .inputColor {
+        font-size: 1.92rem;
+    padding: .8rem 1.6rem;
+    line-height:1;
+    }
+    .btnSubmit{
+        font-size: 1.92rem;
+    padding: .8rem 1.6rem;
+        line-height:1.1;
+
+    }
+
+
+}
