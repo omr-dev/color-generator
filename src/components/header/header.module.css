@@ -32,6 +32,9 @@ gap:3.2rem ;
     padding: .5rem 1rem;
 
 }
+.redBorder{
+    border: 1px solid red;
+}
 @media (min-width: 800px) {
     .mainTitle{
         font-size: 2.8rem;
